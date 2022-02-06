@@ -37,6 +37,7 @@ const Offer = () => {
                 </div>
               );
             }
+            return <></>;
           })}
         </div>
         <hr />
