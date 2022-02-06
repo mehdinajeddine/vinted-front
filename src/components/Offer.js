@@ -16,7 +16,7 @@ const Offer = () => {
       setIsLoading(false);
     };
     getProductData();
-  }, []);
+  }, [id]);
 
   return isLoading ? (
     <div>is Loading ....</div>
