@@ -17,7 +17,9 @@ const Header = ({ logged, setLogged }) => {
     <div className="flex items-center justify-around container">
       {/* Logo */}
       <div className="w-40">
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
       </div>
       {/* Search */}
       <div className="mt-3 sm:mt-0 sm:ml-4 flex-1">
