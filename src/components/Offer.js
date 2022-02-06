@@ -9,9 +9,9 @@ const Offer = () => {
 
   useEffect(() => {
     const getProductData = async () => {
-      const res = await axios.get(
-        "https://lereacteur-vinted-api.herokuapp.com/offer/" + id
-      );
+      const endpoint =
+        "https://lereacteur-vinted-api.herokuapp.com/offer/" + id;
+      const res = await axios.get(endpoint);
       setProduct(res.data);
       setIsLoading(false);
     };
