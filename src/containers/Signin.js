@@ -66,10 +66,7 @@ const Signin = ({ logged, setLogged }) => {
 
         <div className="flex items-center justify-between">
           <div className="text-sm">
-            <a
-              href="#"
-              className="font-medium text-teal-600 hover:text-teal-500"
-            >
+            <a className="font-medium text-teal-600 hover:text-teal-500">
               Forgot your password?
             </a>
           </div>
