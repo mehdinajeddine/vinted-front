@@ -6,8 +6,6 @@ import cookies from "js-cookie";
 import { SearchIcon } from "@heroicons/react/solid";
 
 const Header = ({ logged, setLogged }) => {
-  const token = cookies.get("token");
-
   const handleLogout = (e) => {
     cookies.remove("token");
     setLogged(false);
