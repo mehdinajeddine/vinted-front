@@ -7,15 +7,14 @@ const Offer = () => {
   const [product, setProduct] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
-  const getProductData = async () => {
-    const res = await axios.get(
-      "https://lereacteur-vinted-api.herokuapp.com/offer/" + id
-    );
-    setProduct(res.data);
-    setIsLoading(false);
-  };
-
   useEffect(() => {
+    const getProductData = async () => {
+      const res = await axios.get(
+        "https://lereacteur-vinted-api.herokuapp.com/offer/" + id
+      );
+      setProduct(res.data);
+      setIsLoading(false);
+    };
     getProductData();
   }, []);
 
